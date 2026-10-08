@@ -3,12 +3,10 @@
 import { motion } from "motion/react";
 import { ArrowLeft, Check, ShieldCheck, Sparkles } from "lucide-react";
 import Link from "next/link";
+import { signIn } from "next-auth/react";
 
 export default function GetStartedPage() {
-  const handleGoogleSignIn = () => {
-    // We will connect Google OAuth here later.
-    console.log("Continue with Google");
-  };
+ 
 
   return (
     <main className="relative flex min-h-screen items-center justify-center overflow-hidden bg-slate-50 px-4 py-10 text-slate-900 dark:bg-[#0B1020] dark:text-white">
@@ -79,7 +77,7 @@ export default function GetStartedPage() {
           {/* Google button */}
           <motion.button
             type="button"
-            onClick={handleGoogleSignIn}
+           onClick={() => signIn("google", { callbackUrl: "/dashboard" })}
             whileHover={{ scale: 1.01 }}
             whileTap={{ scale: 0.98 }}
             className="mt-8 flex w-full items-center justify-center gap-3 rounded-xl border border-slate-300 bg-white px-5 py-3.5 text-sm font-semibold text-slate-800 shadow-sm transition hover:border-slate-400 hover:bg-slate-50 dark:border-slate-700 dark:bg-slate-900 dark:text-white dark:hover:border-slate-600 dark:hover:bg-slate-800"
