@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["C:/Users/Nila Nawrozi/Desktop/New folder (10)/dayai/src/app/providers.tsx"],"sourcesContent":["\"use client\";\r\n\r\nimport { SessionProvider } from \"next-auth/react\";\r\n\r\nexport default function Providers({\r\n  children,\r\n}: {\r\n  children: React.ReactNode;\r\n}) {\r\n  return <SessionProvider>{children}</SessionProvider>;\r\n}"],"names":["c","_c","SessionProvider","Providers","t0","$","$i","Symbol","for","children","t1"],"mappings":";;;;;AAAa,SAAAA,CAAA,IAAAC,EAAA;AAEb,SAASC,eAAe,QAAQ,iBAAiB;AAFjD,YAAY;;;;AAIG,mBAAAE,EAAA;IAAA,MAAAC,CAAA,OAAAJ,gLAAA,EAAA;IAAA,IAAAI,CAAA,CAAA,EAAA,KAAA,oEAAA;QAAA,IAAA,IAAAC,EAAA,GAAA,GAAAA,EAAA,GAAA,GAAAA,EAAA,IAAA,EAAA;YAAAD,CAAA,CAAAC,EAAA,CAAA,GAAAC,MAAA,CAAAC,GAAA,CAAA;QAAA;QAAAH,CAAA,CAAA,EAAA,GAAA;IAAA;IAAmB,MAAA,EAAAI,QAAAA,EAAA,GAAAL,EAIjC;IAAA,IAAAM,EAAA;IAAA,IAAAL,CAAA,CAAA,EAAA,KAAAI,QAAA,EAAA;QACQC,EAAA,iBAAA,6LAAC,oKAAe,CAAED;sBAAAA,QAAO,CAAE,EAA1B,eAAe,CAA6B;;;;;;QAAAJ,CAAA,CAAA,EAAA,GAAAI,QAAA;QAAAJ,CAAA,CAAA,EAAA,GAAAK,EAAA;IAAA,OAAA;QAAAA,EAAA,GAAAL,CAAA,CAAA,EAAA;IAAA;IAAA,OAA7CK,EAA6C;AAAA;KALvCP","ignoreList":[]}}]
+}
