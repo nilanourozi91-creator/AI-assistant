@@ -201,6 +201,7 @@
     --color-amber-100: #fef3c6;
     --color-amber-600: #dd7400;
     --color-amber-700: #b75000;
+    --color-yellow-300: #ffe02a;
     --color-emerald-100: #d0fae5;
     --color-emerald-400: #00d294;
     --color-emerald-500: #00bb7f;
@@ -314,6 +315,7 @@
       --color-amber-100: lab(95.916% -1.2165 23.111);
       --color-amber-600: lab(60.3514% 40.5624 87.1228);
       --color-amber-700: lab(47.2709% 42.9082 69.2966);
+      --color-yellow-300: lab(89.7033% -.480324 84.4917);
       --color-emerald-100: lab(94.9004% -17.0769 5.63836);
       --color-emerald-400: lab(75.0771% -60.7313 19.4146);
       --color-emerald-500: lab(66.9756% -58.27 19.5419);
@@ -989,10 +991,6 @@
 
   .h-screen {
     height: 100vh;
-  }
-
-  .min-h-full {
-    min-height: 100%;
   }
 
   .min-h-screen {
@@ -2149,11 +2147,6 @@
     text-decoration-line: line-through;
   }
 
-  .antialiased {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-
   .accent-violet-600 {
     accent-color: var(--color-violet-600);
   }
@@ -2514,6 +2507,14 @@
   }
 
   @media (prefers-color-scheme: dark) {
+    .dark\:block {
+      display: block;
+    }
+
+    .dark\:hidden {
+      display: none;
+    }
+
     .dark\:border-slate-700 {
       border-color: var(--color-slate-700);
     }
@@ -2559,10 +2560,6 @@
     .dark\:bg-\[\#0B1020\]\/80 {
       background-color: #0b1020cc;
       background-color: lab(4.81884% 1.52352 -11.3324 / .8);
-    }
-
-    .dark\:bg-\[\#161E2E\] {
-      background-color: #161e2e;
     }
 
     .dark\:bg-\[\#111827\] {
@@ -2765,6 +2762,10 @@
 
     .dark\:text-white {
       color: var(--color-white);
+    }
+
+    .dark\:text-yellow-300 {
+      color: var(--color-yellow-300);
     }
 
     .dark\:shadow-black\/20 {

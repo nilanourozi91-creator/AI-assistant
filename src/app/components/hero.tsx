@@ -22,11 +22,12 @@ import {
   Users,
   Zap,
 } from "lucide-react";
-
+// import ThemeButton
 import { motion } from "motion/react";
 import { useTheme } from "next-themes";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import ThemeToggle from "./ThemeToggle";
 
 /* =========================================================
    ANIMATION SYSTEM
@@ -161,7 +162,7 @@ function SectionTitle({
       viewport={viewport}
       className="mx-auto max-w-3xl text-center"
     >
-      <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-violet-200 bg-violet-50 px-4 py-2 text-sm font-medium text-violet-700 dark:border-violet-900/60 dark:bg-violet-950/40 dark:text-violet-300">
+      <div className="mb-4 inline-flex items-center  gap-2 rounded-full border border-violet-200 bg-violet-50 px-4 py-2 text-sm font-medium text-violet-700 dark:border-violet-900/60 dark:bg-violet-950/40 dark:text-violet-300">
         <Sparkles className="h-4 w-4" />
         {eyebrow}
       </div>
@@ -177,24 +178,23 @@ function SectionTitle({
   );
 }
 
-function ThemeButton() {
+export function ThemeButton() {
   const { theme, setTheme } = useTheme();
 
   return (
     <button
-      onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-      className="flex h-10 w-10 items-center justify-center rounded-xl border border-slate-200 bg-white text-slate-700 transition hover:bg-slate-100 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-200 dark:hover:bg-slate-800"
-      aria-label="Toggle theme"
+      type="button"
+      onClick={() =>
+        setTheme(theme === "light" ? "dark" : "light")
+      }
+      aria-label="Toggle light and dark mode"
     >
-      {theme === "dark" ? (
-        <Sun className="h-4 w-4" />
-      ) : (
-        <Moon className="h-4 w-4" />
-      )}
+      <Sun className="hidden dark:block" size={20} />
+      <Moon className="block dark:hidden" size={20} />
     </button>
   );
 }
-
+    <ThemeToggle/> 
 /* =========================================================
    NAVBAR
 ========================================================= */
@@ -241,7 +241,7 @@ function Navbar() {
         {/* Actions */}
 
         <div className="hidden items-center gap-3 lg:flex">
-          <ThemeButton />
+          <ThemeToggle />
      {/* register */}
           <motion.div
             whileHover={{ scale: 1.04 }}
@@ -283,7 +283,7 @@ function Navbar() {
             )}
 
             <div className="flex items-center justify-between pt-3">
-              <ThemeButton />
+              
 
               <motion.a
                 whileTap={{ scale: 0.96 }}

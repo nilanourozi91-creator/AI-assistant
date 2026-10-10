@@ -28,6 +28,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$re
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$trending$2d$up$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__TrendingUp$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/trending-up.mjs [app-client] (ecmascript) <export default as TrendingUp>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$users$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Users$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/users.mjs [app-client] (ecmascript) <export default as Users>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$zap$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Zap$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/zap.mjs [app-client] (ecmascript) <export default as Zap>");
+// import ThemeButton
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2f$dist$2f$es$2f$react$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_context__.i("[project]/node_modules/motion/dist/es/react.mjs [app-client] (ecmascript) <locals>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$themes$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next-themes/dist/index.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/client/app-dir/link.js [app-client] (ecmascript)");
@@ -141,11 +142,11 @@ const testimonials = [
    COMPONENTS
 ========================================================= */ function SectionTitle(t0) {
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(12);
-    if ($[0] !== "1690b6c82d05bf1caccd34d94f3b206c843d63106b279b7b2230af26a2a926eb") {
+    if ($[0] !== "5f9bfad9c325c9235ab2e83c3750c1a0e473f3db1b14abc0e453a48638b865aa") {
         for(let $i = 0; $i < 12; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "1690b6c82d05bf1caccd34d94f3b206c843d63106b279b7b2230af26a2a926eb";
+        $[0] = "5f9bfad9c325c9235ab2e83c3750c1a0e473f3db1b14abc0e453a48638b865aa";
     }
     const { eyebrow, title, description } = t0;
     let t1;
@@ -154,7 +155,7 @@ const testimonials = [
             className: "h-4 w-4"
         }, void 0, false, {
             fileName: "[project]/src/app/components/hero.tsx",
-            lineNumber: 120,
+            lineNumber: 122,
             columnNumber: 10
         }, this);
         $[1] = t1;
@@ -171,7 +172,7 @@ const testimonials = [
             ]
         }, void 0, true, {
             fileName: "[project]/src/app/components/hero.tsx",
-            lineNumber: 127,
+            lineNumber: 129,
             columnNumber: 10
         }, this);
         $[2] = eyebrow;
@@ -186,7 +187,7 @@ const testimonials = [
             children: title
         }, void 0, false, {
             fileName: "[project]/src/app/components/hero.tsx",
-            lineNumber: 135,
+            lineNumber: 137,
             columnNumber: 10
         }, this);
         $[4] = title;
@@ -201,7 +202,7 @@ const testimonials = [
             children: description
         }, void 0, false, {
             fileName: "[project]/src/app/components/hero.tsx",
-            lineNumber: 143,
+            lineNumber: 145,
             columnNumber: 10
         }, this);
         $[6] = description;
@@ -224,7 +225,7 @@ const testimonials = [
             ]
         }, void 0, true, {
             fileName: "[project]/src/app/components/hero.tsx",
-            lineNumber: 151,
+            lineNumber: 153,
             columnNumber: 10
         }, this);
         $[8] = t2;
@@ -237,14 +238,46 @@ const testimonials = [
     return t5;
 }
 _c = SectionTitle;
+// function () {
+//   const { resolvedTheme, setTheme } = useTheme();
+//   const [mounted, setMounted] = useState(false);
+//   useEffect(() => {
+//     setMounted(true);
+//   }, []);
+//   if (!mounted) {
+//     return (
+//       <button
+//         aria-label="Toggle theme"
+//         className="h-10 w-10 rounded-xl border border-slate-200 bg-white"
+//       />
+//     );
+//   }
+//   const isDark = resolvedTheme === "dark";
+//   return (
+//     <button
+//       onClick={() => setTheme(isDark ? "light" : "dark")}
+//       aria-label={`Switch to ${isDark ? "light" : "dark"} mode`}
+//       className="flex h-10 w-10 items-center justify-center rounded-xl border border-slate-200 bg-white text-slate-700 transition hover:bg-slate-100 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-200"
+//     >
+//       {isDark ? (
+//         <Sun className="h-4 w-4" />
+//       ) : (
+//         <Moon className="h-4 w-4" />
+//       )}
+//     </button>
+//   );
+// }
+{}// "use client";
+// import { Moon, Sun } from "lucide-react";
+// import { useTheme } from "next-themes";
 function ThemeButton() {
     _s();
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(9);
-    if ($[0] !== "1690b6c82d05bf1caccd34d94f3b206c843d63106b279b7b2230af26a2a926eb") {
+    if ($[0] !== "5f9bfad9c325c9235ab2e83c3750c1a0e473f3db1b14abc0e453a48638b865aa") {
         for(let $i = 0; $i < 9; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "1690b6c82d05bf1caccd34d94f3b206c843d63106b279b7b2230af26a2a926eb";
+        $[0] = "5f9bfad9c325c9235ab2e83c3750c1a0e473f3db1b14abc0e453a48638b865aa";
     }
     const { theme, setTheme } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$themes$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTheme"])();
     let t0;
@@ -261,17 +294,17 @@ function ThemeButton() {
     let t1;
     if ($[4] !== theme) {
         t1 = theme === "dark" ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$sun$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Sun$3e$__["Sun"], {
-            className: "h-4 w-4"
+            size: 18
         }, void 0, false, {
             fileName: "[project]/src/app/components/hero.tsx",
-            lineNumber: 186,
+            lineNumber: 229,
             columnNumber: 29
         }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$moon$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Moon$3e$__["Moon"], {
-            className: "h-4 w-4"
+            size: 18
         }, void 0, false, {
             fileName: "[project]/src/app/components/hero.tsx",
-            lineNumber: 186,
-            columnNumber: 59
+            lineNumber: 229,
+            columnNumber: 49
         }, this);
         $[4] = theme;
         $[5] = t1;
@@ -282,12 +315,12 @@ function ThemeButton() {
     if ($[6] !== t0 || $[7] !== t1) {
         t2 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
             onClick: t0,
-            className: "flex h-10 w-10 items-center justify-center rounded-xl border border-slate-200 bg-white text-slate-700 transition hover:bg-slate-100 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-200 dark:hover:bg-slate-800",
-            "aria-label": "Toggle theme",
+            className: "flex h-10 w-10 items-center justify-center rounded-xl border border-slate-200 bg-white text-slate-700 transition hover:bg-slate-100 dark:border-slate-700 dark:bg-[#161E2E] dark:text-slate-200 dark:hover:bg-slate-800",
+            "aria-label": "Toggle dark mode",
             children: t1
         }, void 0, false, {
             fileName: "[project]/src/app/components/hero.tsx",
-            lineNumber: 194,
+            lineNumber: 237,
             columnNumber: 10
         }, this);
         $[6] = t0;
@@ -309,11 +342,11 @@ _c1 = ThemeButton;
 ========================================================= */ function Navbar() {
     _s1();
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(19);
-    if ($[0] !== "1690b6c82d05bf1caccd34d94f3b206c843d63106b279b7b2230af26a2a926eb") {
+    if ($[0] !== "5f9bfad9c325c9235ab2e83c3750c1a0e473f3db1b14abc0e453a48638b865aa") {
         for(let $i = 0; $i < 19; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "1690b6c82d05bf1caccd34d94f3b206c843d63106b279b7b2230af26a2a926eb";
+        $[0] = "5f9bfad9c325c9235ab2e83c3750c1a0e473f3db1b14abc0e453a48638b865aa";
     }
     const [open, setOpen] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
     let t0;
@@ -333,12 +366,12 @@ _c1 = ThemeButton;
                 className: "h-5 w-5"
             }, void 0, false, {
                 fileName: "[project]/src/app/components/hero.tsx",
-                lineNumber: 228,
+                lineNumber: 271,
                 columnNumber: 167
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/app/components/hero.tsx",
-            lineNumber: 228,
+            lineNumber: 271,
             columnNumber: 10
         }, this);
         $[2] = t1;
@@ -362,19 +395,19 @@ _c1 = ThemeButton;
                             children: "AI"
                         }, void 0, false, {
                             fileName: "[project]/src/app/components/hero.tsx",
-                            lineNumber: 235,
+                            lineNumber: 278,
                             columnNumber: 170
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/components/hero.tsx",
-                    lineNumber: 235,
+                    lineNumber: 278,
                     columnNumber: 85
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/app/components/hero.tsx",
-            lineNumber: 235,
+            lineNumber: 278,
             columnNumber: 10
         }, this);
         $[3] = t2;
@@ -393,7 +426,7 @@ _c1 = ThemeButton;
             ].map(_NavbarAnonymous)
         }, void 0, false, {
             fileName: "[project]/src/app/components/hero.tsx",
-            lineNumber: 242,
+            lineNumber: 285,
             columnNumber: 10
         }, this);
         $[4] = t3;
@@ -404,7 +437,7 @@ _c1 = ThemeButton;
     if ($[5] === Symbol.for("react.memo_cache_sentinel")) {
         t4 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(ThemeButton, {}, void 0, false, {
             fileName: "[project]/src/app/components/hero.tsx",
-            lineNumber: 249,
+            lineNumber: 292,
             columnNumber: 10
         }, this);
         $[5] = t4;
@@ -441,18 +474,18 @@ _c1 = ThemeButton;
                         children: "Get started"
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/hero.tsx",
-                        lineNumber: 271,
+                        lineNumber: 314,
                         columnNumber: 252
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/app/components/hero.tsx",
-                    lineNumber: 271,
+                    lineNumber: 314,
                     columnNumber: 65
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/app/components/hero.tsx",
-            lineNumber: 271,
+            lineNumber: 314,
             columnNumber: 10
         }, this);
         $[8] = t7;
@@ -475,7 +508,7 @@ _c1 = ThemeButton;
             className: "h-6 w-6"
         }, void 0, false, {
             fileName: "[project]/src/app/components/hero.tsx",
-            lineNumber: 288,
+            lineNumber: 331,
             columnNumber: 10
         }, this);
         $[11] = t9;
@@ -496,13 +529,13 @@ _c1 = ThemeButton;
                     children: t9
                 }, void 0, false, {
                     fileName: "[project]/src/app/components/hero.tsx",
-                    lineNumber: 295,
+                    lineNumber: 338,
                     columnNumber: 110
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/app/components/hero.tsx",
-            lineNumber: 295,
+            lineNumber: 338,
             columnNumber: 11
         }, this);
         $[12] = t8;
@@ -540,7 +573,7 @@ _c1 = ThemeButton;
                                 children: item_0
                             }, item_0, false, {
                                 fileName: "[project]/src/app/components/hero.tsx",
-                                lineNumber: 310,
+                                lineNumber: 353,
                                 columnNumber: 46
                             }, this)
                     }["Navbar[(anonymous)()]"]),
@@ -549,7 +582,7 @@ _c1 = ThemeButton;
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(ThemeButton, {}, void 0, false, {
                                 fileName: "[project]/src/app/components/hero.tsx",
-                                lineNumber: 313,
+                                lineNumber: 356,
                                 columnNumber: 93
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2f$dist$2f$es$2f$react$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["motion"].a, {
@@ -561,24 +594,24 @@ _c1 = ThemeButton;
                                 children: "Get started"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/components/hero.tsx",
-                                lineNumber: 313,
+                                lineNumber: 356,
                                 columnNumber: 108
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/components/hero.tsx",
-                        lineNumber: 313,
+                        lineNumber: 356,
                         columnNumber: 37
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/components/hero.tsx",
-                lineNumber: 309,
+                lineNumber: 352,
                 columnNumber: 115
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/app/components/hero.tsx",
-            lineNumber: 303,
+            lineNumber: 346,
             columnNumber: 19
         }, this);
         $[14] = open;
@@ -596,7 +629,7 @@ _c1 = ThemeButton;
             ]
         }, void 0, true, {
             fileName: "[project]/src/app/components/hero.tsx",
-            lineNumber: 323,
+            lineNumber: 366,
             columnNumber: 11
         }, this);
         $[16] = t10;
@@ -621,17 +654,17 @@ _c2 = Navbar;
         children: item
     }, item, false, {
         fileName: "[project]/src/app/components/hero.tsx",
-        lineNumber: 337,
+        lineNumber: 380,
         columnNumber: 10
     }, this);
 }
 function AIWorkspace() {
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(16);
-    if ($[0] !== "1690b6c82d05bf1caccd34d94f3b206c843d63106b279b7b2230af26a2a926eb") {
+    if ($[0] !== "5f9bfad9c325c9235ab2e83c3750c1a0e473f3db1b14abc0e453a48638b865aa") {
         for(let $i = 0; $i < 16; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "1690b6c82d05bf1caccd34d94f3b206c843d63106b279b7b2230af26a2a926eb";
+        $[0] = "5f9bfad9c325c9235ab2e83c3750c1a0e473f3db1b14abc0e453a48638b865aa";
     }
     let t0;
     if ($[1] === Symbol.for("react.memo_cache_sentinel")) {
@@ -665,7 +698,7 @@ function AIWorkspace() {
             className: "absolute -inset-8 rounded-[40px] bg-gradient-to-r from-violet-500/20 via-blue-500/20 to-cyan-400/20 blur-3xl"
         }, void 0, false, {
             fileName: "[project]/src/app/components/hero.tsx",
-            lineNumber: 360,
+            lineNumber: 403,
             columnNumber: 10
         }, this);
         $[2] = t1;
@@ -702,12 +735,12 @@ function AIWorkspace() {
                 className: "h-4 w-4"
             }, void 0, false, {
                 fileName: "[project]/src/app/components/hero.tsx",
-                lineNumber: 392,
+                lineNumber: 435,
                 columnNumber: 104
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/app/components/hero.tsx",
-            lineNumber: 392,
+            lineNumber: 435,
             columnNumber: 10
         }, this);
         t5 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -715,7 +748,7 @@ function AIWorkspace() {
             children: "DayAI Assistant"
         }, void 0, false, {
             fileName: "[project]/src/app/components/hero.tsx",
-            lineNumber: 393,
+            lineNumber: 436,
             columnNumber: 10
         }, this);
         $[5] = t4;
@@ -743,7 +776,7 @@ function AIWorkspace() {
                                             className: "h-1.5 w-1.5 rounded-full bg-emerald-500"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/components/hero.tsx",
-                                            lineNumber: 402,
+                                            lineNumber: 445,
                                             columnNumber: 216
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -751,38 +784,38 @@ function AIWorkspace() {
                                             children: "Online"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/components/hero.tsx",
-                                            lineNumber: 402,
+                                            lineNumber: 445,
                                             columnNumber: 276
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/components/hero.tsx",
-                                    lineNumber: 402,
+                                    lineNumber: 445,
                                     columnNumber: 173
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/components/hero.tsx",
-                            lineNumber: 402,
+                            lineNumber: 445,
                             columnNumber: 164
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/components/hero.tsx",
-                    lineNumber: 402,
+                    lineNumber: 445,
                     columnNumber: 119
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$command$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Command$3e$__["Command"], {
                     className: "h-4 w-4 text-slate-400"
                 }, void 0, false, {
                     fileName: "[project]/src/app/components/hero.tsx",
-                    lineNumber: 402,
+                    lineNumber: 445,
                     columnNumber: 348
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/app/components/hero.tsx",
-            lineNumber: 402,
+            lineNumber: 445,
             columnNumber: 10
         }, this);
         $[7] = t6;
@@ -807,7 +840,7 @@ function AIWorkspace() {
             children: "Help me plan my day. I have 3 hours to study and a project to finish."
         }, void 0, false, {
             fileName: "[project]/src/app/components/hero.tsx",
-            lineNumber: 409,
+            lineNumber: 452,
             columnNumber: 10
         }, this);
         $[8] = t7;
@@ -846,14 +879,14 @@ function AIWorkspace() {
                     className: "h-4 w-4 text-violet-500"
                 }, void 0, false, {
                     fileName: "[project]/src/app/components/hero.tsx",
-                    lineNumber: 447,
+                    lineNumber: 490,
                     columnNumber: 102
                 }, this),
                 "Here's your plan"
             ]
         }, void 0, true, {
             fileName: "[project]/src/app/components/hero.tsx",
-            lineNumber: 447,
+            lineNumber: 490,
             columnNumber: 11
         }, this);
         $[12] = t11;
@@ -894,19 +927,19 @@ function AIWorkspace() {
                             ].map(_AIWorkspaceAnonymous)
                         }, void 0, false, {
                             fileName: "[project]/src/app/components/hero.tsx",
-                            lineNumber: 454,
+                            lineNumber: 497,
                             columnNumber: 250
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/components/hero.tsx",
-                    lineNumber: 454,
+                    lineNumber: 497,
                     columnNumber: 46
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/app/components/hero.tsx",
-            lineNumber: 454,
+            lineNumber: 497,
             columnNumber: 11
         }, this);
         $[13] = t12;
@@ -920,7 +953,7 @@ function AIWorkspace() {
             children: "Ask DayAI anything..."
         }, void 0, false, {
             fileName: "[project]/src/app/components/hero.tsx",
-            lineNumber: 461,
+            lineNumber: 504,
             columnNumber: 11
         }, this);
         $[14] = t13;
@@ -956,35 +989,35 @@ function AIWorkspace() {
                                             className: "h-4 w-4"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/components/hero.tsx",
-                                            lineNumber: 468,
+                                            lineNumber: 511,
                                             columnNumber: 632
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/components/hero.tsx",
-                                        lineNumber: 468,
+                                        lineNumber: 511,
                                         columnNumber: 538
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/components/hero.tsx",
-                                lineNumber: 468,
+                                lineNumber: 511,
                                 columnNumber: 395
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/app/components/hero.tsx",
-                            lineNumber: 468,
+                            lineNumber: 511,
                             columnNumber: 326
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/components/hero.tsx",
-                    lineNumber: 468,
+                    lineNumber: 511,
                     columnNumber: 119
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/app/components/hero.tsx",
-            lineNumber: 468,
+            lineNumber: 511,
             columnNumber: 11
         }, this);
         $[15] = t14;
@@ -1017,7 +1050,7 @@ _c3 = AIWorkspace;
                 children: time
             }, void 0, false, {
                 fileName: "[project]/src/app/components/hero.tsx",
-                lineNumber: 489,
+                lineNumber: 532,
                 columnNumber: 130
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1028,7 +1061,7 @@ _c3 = AIWorkspace;
                         children: title
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/hero.tsx",
-                        lineNumber: 489,
+                        lineNumber: 532,
                         columnNumber: 221
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1036,36 +1069,36 @@ _c3 = AIWorkspace;
                         children: duration
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/hero.tsx",
-                        lineNumber: 489,
+                        lineNumber: 532,
                         columnNumber: 294
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/components/hero.tsx",
-                lineNumber: 489,
+                lineNumber: 532,
                 columnNumber: 197
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$check$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__CheckCircle2$3e$__["CheckCircle2"], {
                 className: "h-4 w-4 text-emerald-500"
             }, void 0, false, {
                 fileName: "[project]/src/app/components/hero.tsx",
-                lineNumber: 489,
+                lineNumber: 532,
                 columnNumber: 352
             }, this)
         ]
     }, title, true, {
         fileName: "[project]/src/app/components/hero.tsx",
-        lineNumber: 481,
+        lineNumber: 524,
         columnNumber: 10
     }, this);
 }
 function Hero() {
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(26);
-    if ($[0] !== "1690b6c82d05bf1caccd34d94f3b206c843d63106b279b7b2230af26a2a926eb") {
+    if ($[0] !== "5f9bfad9c325c9235ab2e83c3750c1a0e473f3db1b14abc0e453a48638b865aa") {
         for(let $i = 0; $i < 26; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "1690b6c82d05bf1caccd34d94f3b206c843d63106b279b7b2230af26a2a926eb";
+        $[0] = "5f9bfad9c325c9235ab2e83c3750c1a0e473f3db1b14abc0e453a48638b865aa";
     }
     let t0;
     if ($[1] === Symbol.for("react.memo_cache_sentinel")) {
@@ -1090,7 +1123,7 @@ function Hero() {
             className: "absolute left-[5%] top-20 h-80 w-80 rounded-full bg-violet-500/20 blur-3xl"
         }, void 0, false, {
             fileName: "[project]/src/app/components/hero.tsx",
-            lineNumber: 501,
+            lineNumber: 544,
             columnNumber: 10
         }, this);
         $[1] = t0;
@@ -1124,20 +1157,20 @@ function Hero() {
                     className: "absolute right-[5%] top-40 h-96 w-96 rounded-full bg-blue-500/20 blur-3xl"
                 }, void 0, false, {
                     fileName: "[project]/src/app/components/hero.tsx",
-                    lineNumber: 515,
+                    lineNumber: 558,
                     columnNumber: 70
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "absolute inset-0 bg-[radial-gradient(#94a3b8_1px,transparent_1px)] [background-size:24px_24px] opacity-[0.08]"
                 }, void 0, false, {
                     fileName: "[project]/src/app/components/hero.tsx",
-                    lineNumber: 522,
+                    lineNumber: 565,
                     columnNumber: 98
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/app/components/hero.tsx",
-            lineNumber: 515,
+            lineNumber: 558,
             columnNumber: 10
         }, this);
         $[2] = t1;
@@ -1173,7 +1206,7 @@ function Hero() {
             className: "h-4 w-4"
         }, void 0, false, {
             fileName: "[project]/src/app/components/hero.tsx",
-            lineNumber: 552,
+            lineNumber: 595,
             columnNumber: 10
         }, this);
         $[6] = t5;
@@ -1194,13 +1227,13 @@ function Hero() {
                     className: "h-4 w-4"
                 }, void 0, false, {
                     fileName: "[project]/src/app/components/hero.tsx",
-                    lineNumber: 559,
+                    lineNumber: 602,
                     columnNumber: 338
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/app/components/hero.tsx",
-            lineNumber: 559,
+            lineNumber: 602,
             columnNumber: 10
         }, this);
         $[7] = t6;
@@ -1246,13 +1279,13 @@ function Hero() {
                     children: "smarter with AI."
                 }, void 0, false, {
                     fileName: "[project]/src/app/components/hero.tsx",
-                    lineNumber: 590,
+                    lineNumber: 633,
                     columnNumber: 193
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/app/components/hero.tsx",
-            lineNumber: 590,
+            lineNumber: 633,
             columnNumber: 11
         }, this);
         $[11] = t10;
@@ -1278,7 +1311,7 @@ function Hero() {
             children: "DayAI brings your tasks, goals, learning and everyday decisions together in one intelligent workspace designed around you."
         }, void 0, false, {
             fileName: "[project]/src/app/components/hero.tsx",
-            lineNumber: 597,
+            lineNumber: 640,
             columnNumber: 11
         }, this);
         $[12] = t11;
@@ -1338,13 +1371,13 @@ function Hero() {
                     className: "h-4 w-4 transition group-hover:translate-x-1"
                 }, void 0, false, {
                     fileName: "[project]/src/app/components/hero.tsx",
-                    lineNumber: 653,
+                    lineNumber: 696,
                     columnNumber: 239
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/app/components/hero.tsx",
-            lineNumber: 653,
+            lineNumber: 696,
             columnNumber: 11
         }, this);
         $[18] = t17;
@@ -1385,20 +1418,20 @@ function Hero() {
                             className: "h-4 w-4 fill-current"
                         }, void 0, false, {
                             fileName: "[project]/src/app/components/hero.tsx",
-                            lineNumber: 675,
+                            lineNumber: 718,
                             columnNumber: 377
                         }, this),
                         "See how it works"
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/components/hero.tsx",
-                    lineNumber: 675,
+                    lineNumber: 718,
                     columnNumber: 122
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/app/components/hero.tsx",
-            lineNumber: 675,
+            lineNumber: 718,
             columnNumber: 11
         }, this);
         $[21] = t20;
@@ -1453,30 +1486,30 @@ function Hero() {
                                     ].map(_HeroAnonymous)
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/components/hero.tsx",
-                                    lineNumber: 703,
+                                    lineNumber: 746,
                                     columnNumber: 214
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/components/hero.tsx",
-                            lineNumber: 703,
+                            lineNumber: 746,
                             columnNumber: 190
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(AIWorkspace, {}, void 0, false, {
                             fileName: "[project]/src/app/components/hero.tsx",
-                            lineNumber: 703,
+                            lineNumber: 746,
                             columnNumber: 465
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/components/hero.tsx",
-                    lineNumber: 703,
+                    lineNumber: 746,
                     columnNumber: 91
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/app/components/hero.tsx",
-            lineNumber: 703,
+            lineNumber: 746,
             columnNumber: 11
         }, this);
         $[25] = t24;
@@ -1496,24 +1529,24 @@ _c4 = Hero;
                 className: "h-4 w-4 text-emerald-500"
             }, void 0, false, {
                 fileName: "[project]/src/app/components/hero.tsx",
-                lineNumber: 715,
+                lineNumber: 758,
                 columnNumber: 62
             }, this),
             item
         ]
     }, item, true, {
         fileName: "[project]/src/app/components/hero.tsx",
-        lineNumber: 715,
+        lineNumber: 758,
         columnNumber: 10
     }, this);
 }
 function Intro() {
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(4);
-    if ($[0] !== "1690b6c82d05bf1caccd34d94f3b206c843d63106b279b7b2230af26a2a926eb") {
+    if ($[0] !== "5f9bfad9c325c9235ab2e83c3750c1a0e473f3db1b14abc0e453a48638b865aa") {
         for(let $i = 0; $i < 4; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "1690b6c82d05bf1caccd34d94f3b206c843d63106b279b7b2230af26a2a926eb";
+        $[0] = "5f9bfad9c325c9235ab2e83c3750c1a0e473f3db1b14abc0e453a48638b865aa";
     }
     let t0;
     if ($[1] === Symbol.for("react.memo_cache_sentinel")) {
@@ -1550,7 +1583,7 @@ function Intro() {
             description: "Stop switching between dozens of apps. DayAI helps you think, organize and get things done from one simple place."
         }, void 0, false, {
             fileName: "[project]/src/app/components/hero.tsx",
-            lineNumber: 750,
+            lineNumber: 793,
             columnNumber: 10
         }, this);
         $[2] = t1;
@@ -1574,18 +1607,18 @@ function Intro() {
                         children: items.map(_IntroItemsMap)
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/hero.tsx",
-                        lineNumber: 757,
+                        lineNumber: 800,
                         columnNumber: 176
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/components/hero.tsx",
-                lineNumber: 757,
+                lineNumber: 800,
                 columnNumber: 124
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/app/components/hero.tsx",
-            lineNumber: 757,
+            lineNumber: 800,
             columnNumber: 10
         }, this);
         $[3] = t2;
@@ -1610,7 +1643,7 @@ _c5 = Intro;
                 children: item.number
             }, void 0, false, {
                 fileName: "[project]/src/app/components/hero.tsx",
-                lineNumber: 771,
+                lineNumber: 814,
                 columnNumber: 209
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1622,12 +1655,12 @@ _c5 = Intro;
                             className: "h-6 w-6"
                         }, void 0, false, {
                             fileName: "[project]/src/app/components/hero.tsx",
-                            lineNumber: 771,
+                            lineNumber: 814,
                             columnNumber: 498
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/hero.tsx",
-                        lineNumber: 771,
+                        lineNumber: 814,
                         columnNumber: 348
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -1635,7 +1668,7 @@ _c5 = Intro;
                         children: item.title
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/hero.tsx",
-                        lineNumber: 771,
+                        lineNumber: 814,
                         columnNumber: 537
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1643,29 +1676,29 @@ _c5 = Intro;
                         children: item.description
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/hero.tsx",
-                        lineNumber: 771,
+                        lineNumber: 814,
                         columnNumber: 620
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/components/hero.tsx",
-                lineNumber: 771,
+                lineNumber: 814,
                 columnNumber: 322
             }, this)
         ]
     }, item.number, true, {
         fileName: "[project]/src/app/components/hero.tsx",
-        lineNumber: 769,
+        lineNumber: 812,
         columnNumber: 10
     }, this);
 }
 function Features() {
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(3);
-    if ($[0] !== "1690b6c82d05bf1caccd34d94f3b206c843d63106b279b7b2230af26a2a926eb") {
+    if ($[0] !== "5f9bfad9c325c9235ab2e83c3750c1a0e473f3db1b14abc0e453a48638b865aa") {
         for(let $i = 0; $i < 3; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "1690b6c82d05bf1caccd34d94f3b206c843d63106b279b7b2230af26a2a926eb";
+        $[0] = "5f9bfad9c325c9235ab2e83c3750c1a0e473f3db1b14abc0e453a48638b865aa";
     }
     let t0;
     if ($[1] === Symbol.for("react.memo_cache_sentinel")) {
@@ -1675,7 +1708,7 @@ function Features() {
             description: "DayAI combines powerful AI with practical productivity tools so you can spend less time organizing and more time moving forward."
         }, void 0, false, {
             fileName: "[project]/src/app/components/hero.tsx",
-            lineNumber: 783,
+            lineNumber: 826,
             columnNumber: 10
         }, this);
         $[1] = t0;
@@ -1700,18 +1733,18 @@ function Features() {
                         children: features.map(_FeaturesFeaturesMap)
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/hero.tsx",
-                        lineNumber: 790,
+                        lineNumber: 833,
                         columnNumber: 103
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/components/hero.tsx",
-                lineNumber: 790,
+                lineNumber: 833,
                 columnNumber: 51
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/app/components/hero.tsx",
-            lineNumber: 790,
+            lineNumber: 833,
             columnNumber: 10
         }, this);
         $[2] = t1;
@@ -1742,12 +1775,12 @@ _c6 = Features;
                     className: "h-5 w-5"
                 }, void 0, false, {
                     fileName: "[project]/src/app/components/hero.tsx",
-                    lineNumber: 808,
+                    lineNumber: 851,
                     columnNumber: 153
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/components/hero.tsx",
-                lineNumber: 805,
+                lineNumber: 848,
                 columnNumber: 184
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -1755,7 +1788,7 @@ _c6 = Features;
                 children: feature.title
             }, void 0, false, {
                 fileName: "[project]/src/app/components/hero.tsx",
-                lineNumber: 808,
+                lineNumber: 851,
                 columnNumber: 202
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1763,7 +1796,7 @@ _c6 = Features;
                 children: feature.description
             }, void 0, false, {
                 fileName: "[project]/src/app/components/hero.tsx",
-                lineNumber: 808,
+                lineNumber: 851,
                 columnNumber: 287
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1774,29 +1807,29 @@ _c6 = Features;
                         className: "h-4 w-4"
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/hero.tsx",
-                        lineNumber: 808,
+                        lineNumber: 851,
                         columnNumber: 542
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/components/hero.tsx",
-                lineNumber: 808,
+                lineNumber: 851,
                 columnNumber: 377
             }, this)
         ]
     }, feature.title, true, {
         fileName: "[project]/src/app/components/hero.tsx",
-        lineNumber: 802,
+        lineNumber: 845,
         columnNumber: 10
     }, this);
 }
 function AIShowcase() {
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(16);
-    if ($[0] !== "1690b6c82d05bf1caccd34d94f3b206c843d63106b279b7b2230af26a2a926eb") {
+    if ($[0] !== "5f9bfad9c325c9235ab2e83c3750c1a0e473f3db1b14abc0e453a48638b865aa") {
         for(let $i = 0; $i < 16; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "1690b6c82d05bf1caccd34d94f3b206c843d63106b279b7b2230af26a2a926eb";
+        $[0] = "5f9bfad9c325c9235ab2e83c3750c1a0e473f3db1b14abc0e453a48638b865aa";
     }
     let t0;
     if ($[1] === Symbol.for("react.memo_cache_sentinel")) {
@@ -1807,14 +1840,14 @@ function AIShowcase() {
                     className: "h-4 w-4"
                 }, void 0, false, {
                     fileName: "[project]/src/app/components/hero.tsx",
-                    lineNumber: 820,
+                    lineNumber: 863,
                     columnNumber: 155
                 }, this),
                 "AI that understands context"
             ]
         }, void 0, true, {
             fileName: "[project]/src/app/components/hero.tsx",
-            lineNumber: 820,
+            lineNumber: 863,
             columnNumber: 10
         }, this);
         $[1] = t0;
@@ -1833,13 +1866,13 @@ function AIShowcase() {
                     children: "Your personal AI workspace."
                 }, void 0, false, {
                     fileName: "[project]/src/app/components/hero.tsx",
-                    lineNumber: 828,
+                    lineNumber: 871,
                     columnNumber: 92
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/app/components/hero.tsx",
-            lineNumber: 828,
+            lineNumber: 871,
             columnNumber: 10
         }, this);
         t2 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1847,7 +1880,7 @@ function AIShowcase() {
             children: "DayAI can understand your goals, schedule and priorities to provide useful answers and turn conversations into action."
         }, void 0, false, {
             fileName: "[project]/src/app/components/hero.tsx",
-            lineNumber: 829,
+            lineNumber: 872,
             columnNumber: 10
         }, this);
         $[2] = t1;
@@ -1877,13 +1910,13 @@ function AIShowcase() {
                     ].map(_AIShowcaseAnonymous)
                 }, void 0, false, {
                     fileName: "[project]/src/app/components/hero.tsx",
-                    lineNumber: 838,
+                    lineNumber: 881,
                     columnNumber: 113
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/app/components/hero.tsx",
-            lineNumber: 838,
+            lineNumber: 881,
             columnNumber: 10
         }, this);
         $[4] = t3;
@@ -1924,7 +1957,7 @@ function AIShowcase() {
             className: "absolute -inset-10 rounded-full bg-violet-600/20 blur-3xl"
         }, void 0, false, {
             fileName: "[project]/src/app/components/hero.tsx",
-            lineNumber: 873,
+            lineNumber: 916,
             columnNumber: 10
         }, this);
         $[8] = t7;
@@ -1943,7 +1976,7 @@ function AIShowcase() {
                             children: "Today's focus"
                         }, void 0, false, {
                             fileName: "[project]/src/app/components/hero.tsx",
-                            lineNumber: 880,
+                            lineNumber: 923,
                             columnNumber: 71
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1951,13 +1984,13 @@ function AIShowcase() {
                             children: "Tuesday, October 3"
                         }, void 0, false, {
                             fileName: "[project]/src/app/components/hero.tsx",
-                            lineNumber: 880,
+                            lineNumber: 923,
                             columnNumber: 117
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/components/hero.tsx",
-                    lineNumber: 880,
+                    lineNumber: 923,
                     columnNumber: 66
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1965,13 +1998,13 @@ function AIShowcase() {
                     children: "78% complete"
                 }, void 0, false, {
                     fileName: "[project]/src/app/components/hero.tsx",
-                    lineNumber: 880,
+                    lineNumber: 923,
                     columnNumber: 183
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/app/components/hero.tsx",
-            lineNumber: 880,
+            lineNumber: 923,
             columnNumber: 10
         }, this);
         $[9] = t8;
@@ -2016,12 +2049,12 @@ function AIShowcase() {
                 className: "h-full rounded-full bg-gradient-to-r from-violet-500 to-blue-500"
             }, void 0, false, {
                 fileName: "[project]/src/app/components/hero.tsx",
-                lineNumber: 909,
+                lineNumber: 952,
                 columnNumber: 79
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/app/components/hero.tsx",
-            lineNumber: 909,
+            lineNumber: 952,
             columnNumber: 11
         }, this);
         $[13] = t12;
@@ -2056,7 +2089,7 @@ function AIShowcase() {
             ].map(_AIShowcaseAnonymous2)
         }, void 0, false, {
             fileName: "[project]/src/app/components/hero.tsx",
-            lineNumber: 919,
+            lineNumber: 962,
             columnNumber: 11
         }, this);
         $[14] = t13;
@@ -2097,7 +2130,7 @@ function AIShowcase() {
                                                         className: "mt-0.5 h-5 w-5 text-violet-400"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/components/hero.tsx",
-                                                        lineNumber: 926,
+                                                        lineNumber: 969,
                                                         columnNumber: 537
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2107,7 +2140,7 @@ function AIShowcase() {
                                                                 children: "DayAI suggestion"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/components/hero.tsx",
-                                                                lineNumber: 926,
+                                                                lineNumber: 969,
                                                                 columnNumber: 597
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2115,52 +2148,52 @@ function AIShowcase() {
                                                                 children: "You have a free 30-minute window at 16:30. Would you like to use it for your project?"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/components/hero.tsx",
-                                                                lineNumber: 926,
+                                                                lineNumber: 969,
                                                                 columnNumber: 670
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/app/components/hero.tsx",
-                                                        lineNumber: 926,
+                                                        lineNumber: 969,
                                                         columnNumber: 592
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/components/hero.tsx",
-                                                lineNumber: 926,
+                                                lineNumber: 969,
                                                 columnNumber: 497
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/components/hero.tsx",
-                                            lineNumber: 926,
+                                            lineNumber: 969,
                                             columnNumber: 415
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/components/hero.tsx",
-                                    lineNumber: 926,
+                                    lineNumber: 969,
                                     columnNumber: 308
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/components/hero.tsx",
-                            lineNumber: 926,
+                            lineNumber: 969,
                             columnNumber: 205
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/components/hero.tsx",
-                    lineNumber: 926,
+                    lineNumber: 969,
                     columnNumber: 144
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/components/hero.tsx",
-                lineNumber: 926,
+                lineNumber: 969,
                 columnNumber: 96
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/app/components/hero.tsx",
-            lineNumber: 926,
+            lineNumber: 969,
             columnNumber: 11
         }, this);
         $[15] = t14;
@@ -2195,18 +2228,18 @@ _c7 = AIShowcase;
                     className: "h-4 w-4"
                 }, void 0, false, {
                     fileName: "[project]/src/app/components/hero.tsx",
-                    lineNumber: 947,
+                    lineNumber: 990,
                     columnNumber: 258
                 }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$target$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Target$3e$__["Target"], {
                     className: "h-4 w-4"
                 }, void 0, false, {
                     fileName: "[project]/src/app/components/hero.tsx",
-                    lineNumber: 947,
+                    lineNumber: 990,
                     columnNumber: 290
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/components/hero.tsx",
-                lineNumber: 947,
+                lineNumber: 990,
                 columnNumber: 95
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2217,7 +2250,7 @@ _c7 = AIShowcase;
                         children: String(task)
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/hero.tsx",
-                        lineNumber: 947,
+                        lineNumber: 990,
                         columnNumber: 351
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2225,19 +2258,19 @@ _c7 = AIShowcase;
                         children: String(time)
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/hero.tsx",
-                        lineNumber: 947,
+                        lineNumber: 990,
                         columnNumber: 465
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/components/hero.tsx",
-                lineNumber: 947,
+                lineNumber: 990,
                 columnNumber: 327
             }, this)
         ]
     }, String(task), true, {
         fileName: "[project]/src/app/components/hero.tsx",
-        lineNumber: 939,
+        lineNumber: 982,
         columnNumber: 10
     }, this);
 }
@@ -2263,12 +2296,12 @@ function _AIShowcaseAnonymous(item, index) {
                     className: "h-3.5 w-3.5 text-emerald-400"
                 }, void 0, false, {
                     fileName: "[project]/src/app/components/hero.tsx",
-                    lineNumber: 958,
+                    lineNumber: 1001,
                     columnNumber: 131
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/components/hero.tsx",
-                lineNumber: 958,
+                lineNumber: 1001,
                 columnNumber: 42
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2276,23 +2309,23 @@ function _AIShowcaseAnonymous(item, index) {
                 children: item
             }, void 0, false, {
                 fileName: "[project]/src/app/components/hero.tsx",
-                lineNumber: 958,
+                lineNumber: 1001,
                 columnNumber: 187
             }, this)
         ]
     }, item, true, {
         fileName: "[project]/src/app/components/hero.tsx",
-        lineNumber: 950,
+        lineNumber: 993,
         columnNumber: 10
     }, this);
 }
 function HowItWorks() {
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(5);
-    if ($[0] !== "1690b6c82d05bf1caccd34d94f3b206c843d63106b279b7b2230af26a2a926eb") {
+    if ($[0] !== "5f9bfad9c325c9235ab2e83c3750c1a0e473f3db1b14abc0e453a48638b865aa") {
         for(let $i = 0; $i < 5; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "1690b6c82d05bf1caccd34d94f3b206c843d63106b279b7b2230af26a2a926eb";
+        $[0] = "5f9bfad9c325c9235ab2e83c3750c1a0e473f3db1b14abc0e453a48638b865aa";
     }
     let t0;
     if ($[1] === Symbol.for("react.memo_cache_sentinel")) {
@@ -2329,7 +2362,7 @@ function HowItWorks() {
             description: "No complicated setup. No productivity system to learn. Just tell DayAI what you need."
         }, void 0, false, {
             fileName: "[project]/src/app/components/hero.tsx",
-            lineNumber: 993,
+            lineNumber: 1036,
             columnNumber: 10
         }, this);
         $[2] = t1;
@@ -2367,25 +2400,25 @@ function HowItWorks() {
                                 className: "absolute left-[18%] right-[18%] top-14 hidden h-px bg-gradient-to-r from-violet-300 via-indigo-300 to-blue-300 md:block dark:from-violet-900 dark:via-indigo-900 dark:to-blue-900"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/components/hero.tsx",
-                                lineNumber: 1010,
+                                lineNumber: 1053,
                                 columnNumber: 267
                             }, this),
                             steps.map(_HowItWorksStepsMap)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/components/hero.tsx",
-                        lineNumber: 1010,
+                        lineNumber: 1053,
                         columnNumber: 107
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/components/hero.tsx",
-                lineNumber: 1010,
+                lineNumber: 1053,
                 columnNumber: 55
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/app/components/hero.tsx",
-            lineNumber: 1010,
+            lineNumber: 1053,
             columnNumber: 10
         }, this);
         $[4] = t3;
@@ -2419,12 +2452,12 @@ _c8 = HowItWorks;
                             className: "h-7 w-7"
                         }, void 0, false, {
                             fileName: "[project]/src/app/components/hero.tsx",
-                            lineNumber: 1028,
+                            lineNumber: 1071,
                             columnNumber: 328
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/hero.tsx",
-                        lineNumber: 1028,
+                        lineNumber: 1071,
                         columnNumber: 198
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2432,13 +2465,13 @@ _c8 = HowItWorks;
                         children: step.number
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/hero.tsx",
-                        lineNumber: 1028,
+                        lineNumber: 1071,
                         columnNumber: 367
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/components/hero.tsx",
-                lineNumber: 1025,
+                lineNumber: 1068,
                 columnNumber: 75
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -2446,7 +2479,7 @@ _c8 = HowItWorks;
                 children: step.title
             }, void 0, false, {
                 fileName: "[project]/src/app/components/hero.tsx",
-                lineNumber: 1028,
+                lineNumber: 1071,
                 columnNumber: 573
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2454,23 +2487,23 @@ _c8 = HowItWorks;
                 children: step.text
             }, void 0, false, {
                 fileName: "[project]/src/app/components/hero.tsx",
-                lineNumber: 1028,
+                lineNumber: 1071,
                 columnNumber: 660
             }, this)
         ]
     }, step.number, true, {
         fileName: "[project]/src/app/components/hero.tsx",
-        lineNumber: 1022,
+        lineNumber: 1065,
         columnNumber: 10
     }, this);
 }
 function Stats() {
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(3);
-    if ($[0] !== "1690b6c82d05bf1caccd34d94f3b206c843d63106b279b7b2230af26a2a926eb") {
+    if ($[0] !== "5f9bfad9c325c9235ab2e83c3750c1a0e473f3db1b14abc0e453a48638b865aa") {
         for(let $i = 0; $i < 3; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "1690b6c82d05bf1caccd34d94f3b206c843d63106b279b7b2230af26a2a926eb";
+        $[0] = "5f9bfad9c325c9235ab2e83c3750c1a0e473f3db1b14abc0e453a48638b865aa";
     }
     let t0;
     if ($[1] === Symbol.for("react.memo_cache_sentinel")) {
@@ -2509,12 +2542,12 @@ function Stats() {
                 ].map(_StatsAnonymous)
             }, void 0, false, {
                 fileName: "[project]/src/app/components/hero.tsx",
-                lineNumber: 1050,
+                lineNumber: 1093,
                 columnNumber: 118
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/app/components/hero.tsx",
-            lineNumber: 1050,
+            lineNumber: 1093,
             columnNumber: 10
         }, this);
         $[2] = t1;
@@ -2541,7 +2574,7 @@ _c9 = Stats;
                 children: number
             }, void 0, false, {
                 fileName: "[project]/src/app/components/hero.tsx",
-                lineNumber: 1066,
+                lineNumber: 1109,
                 columnNumber: 60
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2549,23 +2582,23 @@ _c9 = Stats;
                 children: label
             }, void 0, false, {
                 fileName: "[project]/src/app/components/hero.tsx",
-                lineNumber: 1066,
+                lineNumber: 1109,
                 columnNumber: 152
             }, this)
         ]
     }, label, true, {
         fileName: "[project]/src/app/components/hero.tsx",
-        lineNumber: 1063,
+        lineNumber: 1106,
         columnNumber: 10
     }, this);
 }
 function Testimonials() {
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(3);
-    if ($[0] !== "1690b6c82d05bf1caccd34d94f3b206c843d63106b279b7b2230af26a2a926eb") {
+    if ($[0] !== "5f9bfad9c325c9235ab2e83c3750c1a0e473f3db1b14abc0e453a48638b865aa") {
         for(let $i = 0; $i < 3; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "1690b6c82d05bf1caccd34d94f3b206c843d63106b279b7b2230af26a2a926eb";
+        $[0] = "5f9bfad9c325c9235ab2e83c3750c1a0e473f3db1b14abc0e453a48638b865aa";
     }
     let t0;
     if ($[1] === Symbol.for("react.memo_cache_sentinel")) {
@@ -2575,7 +2608,7 @@ function Testimonials() {
             description: "People use DayAI to organize their days, learn new things and turn ideas into action."
         }, void 0, false, {
             fileName: "[project]/src/app/components/hero.tsx",
-            lineNumber: 1078,
+            lineNumber: 1121,
             columnNumber: 10
         }, this);
         $[1] = t0;
@@ -2599,18 +2632,18 @@ function Testimonials() {
                         children: testimonials.map(_TestimonialsTestimonialsMap)
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/hero.tsx",
-                        lineNumber: 1085,
+                        lineNumber: 1128,
                         columnNumber: 89
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/components/hero.tsx",
-                lineNumber: 1085,
+                lineNumber: 1128,
                 columnNumber: 37
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/app/components/hero.tsx",
-            lineNumber: 1085,
+            lineNumber: 1128,
             columnNumber: 10
         }, this);
         $[2] = t1;
@@ -2645,7 +2678,7 @@ _c10 = Testimonials;
                 ].map(_TestimonialsTestimonialsMapAnonymous)
             }, void 0, false, {
                 fileName: "[project]/src/app/components/hero.tsx",
-                lineNumber: 1102,
+                lineNumber: 1145,
                 columnNumber: 117
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2657,7 +2690,7 @@ _c10 = Testimonials;
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/components/hero.tsx",
-                lineNumber: 1102,
+                lineNumber: 1145,
                 columnNumber: 227
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2668,7 +2701,7 @@ _c10 = Testimonials;
                         children: testimonial.initials
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/hero.tsx",
-                        lineNumber: 1102,
+                        lineNumber: 1145,
                         columnNumber: 370
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2678,7 +2711,7 @@ _c10 = Testimonials;
                                 children: testimonial.name
                             }, void 0, false, {
                                 fileName: "[project]/src/app/components/hero.tsx",
-                                lineNumber: 1102,
+                                lineNumber: 1145,
                                 columnNumber: 551
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2686,25 +2719,25 @@ _c10 = Testimonials;
                                 children: testimonial.role
                             }, void 0, false, {
                                 fileName: "[project]/src/app/components/hero.tsx",
-                                lineNumber: 1102,
+                                lineNumber: 1145,
                                 columnNumber: 641
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/components/hero.tsx",
-                        lineNumber: 1102,
+                        lineNumber: 1145,
                         columnNumber: 546
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/components/hero.tsx",
-                lineNumber: 1102,
+                lineNumber: 1145,
                 columnNumber: 324
             }, this)
         ]
     }, testimonial.name, true, {
         fileName: "[project]/src/app/components/hero.tsx",
-        lineNumber: 1097,
+        lineNumber: 1140,
         columnNumber: 10
     }, this);
 }
@@ -2713,17 +2746,17 @@ function _TestimonialsTestimonialsMapAnonymous(star) {
         children: "★"
     }, star, false, {
         fileName: "[project]/src/app/components/hero.tsx",
-        lineNumber: 1105,
+        lineNumber: 1148,
         columnNumber: 10
     }, this);
 }
 function CTA() {
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(13);
-    if ($[0] !== "1690b6c82d05bf1caccd34d94f3b206c843d63106b279b7b2230af26a2a926eb") {
+    if ($[0] !== "5f9bfad9c325c9235ab2e83c3750c1a0e473f3db1b14abc0e453a48638b865aa") {
         for(let $i = 0; $i < 13; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "1690b6c82d05bf1caccd34d94f3b206c843d63106b279b7b2230af26a2a926eb";
+        $[0] = "5f9bfad9c325c9235ab2e83c3750c1a0e473f3db1b14abc0e453a48638b865aa";
     }
     let t0;
     let t1;
@@ -2764,7 +2797,7 @@ function CTA() {
             className: "absolute -left-20 -top-20 h-64 w-64 rounded-full bg-white blur-3xl"
         }, void 0, false, {
             fileName: "[project]/src/app/components/hero.tsx",
-            lineNumber: 1134,
+            lineNumber: 1177,
             columnNumber: 10
         }, this);
         $[3] = t2;
@@ -2788,7 +2821,7 @@ function CTA() {
             className: "absolute -bottom-24 -right-20 h-72 w-72 rounded-full bg-blue-300/30 blur-3xl"
         }, void 0, false, {
             fileName: "[project]/src/app/components/hero.tsx",
-            lineNumber: 1147,
+            lineNumber: 1190,
             columnNumber: 10
         }, this);
         $[4] = t3;
@@ -2803,12 +2836,12 @@ function CTA() {
                 className: "h-7 w-7"
             }, void 0, false, {
                 fileName: "[project]/src/app/components/hero.tsx",
-                lineNumber: 1159,
+                lineNumber: 1202,
                 columnNumber: 121
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/app/components/hero.tsx",
-            lineNumber: 1159,
+            lineNumber: 1202,
             columnNumber: 10
         }, this);
         $[5] = t4;
@@ -2827,13 +2860,13 @@ function CTA() {
                     children: "Your AI."
                 }, void 0, false, {
                     fileName: "[project]/src/app/components/hero.tsx",
-                    lineNumber: 1167,
+                    lineNumber: 1210,
                     columnNumber: 93
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/app/components/hero.tsx",
-            lineNumber: 1167,
+            lineNumber: 1210,
             columnNumber: 10
         }, this);
         t6 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2841,7 +2874,7 @@ function CTA() {
             children: "Start organizing your life with an AI assistant designed to help you think clearly, plan better and accomplish more."
         }, void 0, false, {
             fileName: "[project]/src/app/components/hero.tsx",
-            lineNumber: 1168,
+            lineNumber: 1211,
             columnNumber: 10
         }, this);
         $[6] = t5;
@@ -2892,13 +2925,13 @@ function CTA() {
                                     className: "h-4 w-4"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/components/hero.tsx",
-                                    lineNumber: 1192,
+                                    lineNumber: 1235,
                                     columnNumber: 522
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/components/hero.tsx",
-                            lineNumber: 1192,
+                            lineNumber: 1235,
                             columnNumber: 333
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2906,19 +2939,19 @@ function CTA() {
                             children: "No credit card required"
                         }, void 0, false, {
                             fileName: "[project]/src/app/components/hero.tsx",
-                            lineNumber: 1192,
+                            lineNumber: 1235,
                             columnNumber: 567
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/components/hero.tsx",
-                    lineNumber: 1192,
+                    lineNumber: 1235,
                     columnNumber: 295
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/app/components/hero.tsx",
-            lineNumber: 1192,
+            lineNumber: 1235,
             columnNumber: 10
         }, this);
         $[10] = t9;
@@ -2949,23 +2982,23 @@ function CTA() {
                         href: "#bannernew",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$move$2d$up$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__MoveUp$3e$__["MoveUp"], {}, void 0, false, {
                             fileName: "[project]/src/app/components/hero.tsx",
-                            lineNumber: 1209,
+                            lineNumber: 1252,
                             columnNumber: 182
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/hero.tsx",
-                        lineNumber: 1209,
+                        lineNumber: 1252,
                         columnNumber: 158
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/app/components/hero.tsx",
-                    lineNumber: 1209,
+                    lineNumber: 1252,
                     columnNumber: 72
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/app/components/hero.tsx",
-            lineNumber: 1209,
+            lineNumber: 1252,
             columnNumber: 11
         }, this);
         $[12] = t11;
@@ -2979,11 +3012,11 @@ _c11 = CTA;
    FOOTER
 ========================================================= */ function Footer() {
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(5);
-    if ($[0] !== "1690b6c82d05bf1caccd34d94f3b206c843d63106b279b7b2230af26a2a926eb") {
+    if ($[0] !== "5f9bfad9c325c9235ab2e83c3750c1a0e473f3db1b14abc0e453a48638b865aa") {
         for(let $i = 0; $i < 5; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "1690b6c82d05bf1caccd34d94f3b206c843d63106b279b7b2230af26a2a926eb";
+        $[0] = "5f9bfad9c325c9235ab2e83c3750c1a0e473f3db1b14abc0e453a48638b865aa";
     }
     let t0;
     if ($[1] === Symbol.for("react.memo_cache_sentinel")) {
@@ -2993,12 +3026,12 @@ _c11 = CTA;
                 className: "h-5 w-5"
             }, void 0, false, {
                 fileName: "[project]/src/app/components/hero.tsx",
-                lineNumber: 1231,
+                lineNumber: 1274,
                 columnNumber: 136
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/app/components/hero.tsx",
-            lineNumber: 1231,
+            lineNumber: 1274,
             columnNumber: 10
         }, this);
         $[1] = t0;
@@ -3026,19 +3059,19 @@ _c11 = CTA;
                                             children: "AI"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/components/hero.tsx",
-                                            lineNumber: 1238,
+                                            lineNumber: 1281,
                                             columnNumber: 184
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/components/hero.tsx",
-                                    lineNumber: 1238,
+                                    lineNumber: 1281,
                                     columnNumber: 145
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/components/hero.tsx",
-                            lineNumber: 1238,
+                            lineNumber: 1281,
                             columnNumber: 100
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -3046,13 +3079,13 @@ _c11 = CTA;
                             children: "An intelligent workspace for your everyday life. Think smarter. Plan better. Do more."
                         }, void 0, false, {
                             fileName: "[project]/src/app/components/hero.tsx",
-                            lineNumber: 1238,
+                            lineNumber: 1281,
                             columnNumber: 240
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/components/hero.tsx",
-                    lineNumber: 1238,
+                    lineNumber: 1281,
                     columnNumber: 69
                 }, this),
                 [
@@ -3087,7 +3120,7 @@ _c11 = CTA;
             ]
         }, void 0, true, {
             fileName: "[project]/src/app/components/hero.tsx",
-            lineNumber: 1238,
+            lineNumber: 1281,
             columnNumber: 10
         }, this);
         $[2] = t1;
@@ -3100,7 +3133,7 @@ _c11 = CTA;
             children: "© 2026 DayAI. All rights reserved."
         }, void 0, false, {
             fileName: "[project]/src/app/components/hero.tsx",
-            lineNumber: 1254,
+            lineNumber: 1297,
             columnNumber: 10
         }, this);
         $[3] = t2;
@@ -3126,37 +3159,37 @@ _c11 = CTA;
                                         children: "Made for better days."
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/components/hero.tsx",
-                                        lineNumber: 1261,
+                                        lineNumber: 1304,
                                         columnNumber: 358
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$users$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Users$3e$__["Users"], {
                                         className: "h-4 w-4"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/components/hero.tsx",
-                                        lineNumber: 1261,
+                                        lineNumber: 1304,
                                         columnNumber: 392
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/components/hero.tsx",
-                                lineNumber: 1261,
+                                lineNumber: 1304,
                                 columnNumber: 317
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/components/hero.tsx",
-                        lineNumber: 1261,
+                        lineNumber: 1304,
                         columnNumber: 166
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/components/hero.tsx",
-                lineNumber: 1261,
+                lineNumber: 1304,
                 columnNumber: 108
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/app/components/hero.tsx",
-            lineNumber: 1261,
+            lineNumber: 1304,
             columnNumber: 10
         }, this);
         $[4] = t3;
@@ -3176,7 +3209,7 @@ _c12 = Footer;
                 children: group.title
             }, void 0, false, {
                 fileName: "[project]/src/app/components/hero.tsx",
-                lineNumber: 1273,
+                lineNumber: 1316,
                 columnNumber: 33
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3184,13 +3217,13 @@ _c12 = Footer;
                 children: group.links.map(_FooterAnonymousGroupLinksMap)
             }, void 0, false, {
                 fileName: "[project]/src/app/components/hero.tsx",
-                lineNumber: 1273,
+                lineNumber: 1316,
                 columnNumber: 112
             }, this)
         ]
     }, group.title, true, {
         fileName: "[project]/src/app/components/hero.tsx",
-        lineNumber: 1273,
+        lineNumber: 1316,
         columnNumber: 10
     }, this);
 }
@@ -3201,17 +3234,17 @@ function _FooterAnonymousGroupLinksMap(link) {
         children: link
     }, link, false, {
         fileName: "[project]/src/app/components/hero.tsx",
-        lineNumber: 1276,
+        lineNumber: 1319,
         columnNumber: 10
     }, this);
 }
 function Home() {
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(2);
-    if ($[0] !== "1690b6c82d05bf1caccd34d94f3b206c843d63106b279b7b2230af26a2a926eb") {
+    if ($[0] !== "5f9bfad9c325c9235ab2e83c3750c1a0e473f3db1b14abc0e453a48638b865aa") {
         for(let $i = 0; $i < 2; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "1690b6c82d05bf1caccd34d94f3b206c843d63106b279b7b2230af26a2a926eb";
+        $[0] = "5f9bfad9c325c9235ab2e83c3750c1a0e473f3db1b14abc0e453a48638b865aa";
     }
     let t0;
     if ($[1] === Symbol.for("react.memo_cache_sentinel")) {
@@ -3220,58 +3253,58 @@ function Home() {
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Navbar, {}, void 0, false, {
                     fileName: "[project]/src/app/components/hero.tsx",
-                    lineNumber: 1288,
+                    lineNumber: 1331,
                     columnNumber: 117
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Hero, {}, void 0, false, {
                     fileName: "[project]/src/app/components/hero.tsx",
-                    lineNumber: 1288,
+                    lineNumber: 1331,
                     columnNumber: 127
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Intro, {}, void 0, false, {
                     fileName: "[project]/src/app/components/hero.tsx",
-                    lineNumber: 1288,
+                    lineNumber: 1331,
                     columnNumber: 135
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Features, {}, void 0, false, {
                     fileName: "[project]/src/app/components/hero.tsx",
-                    lineNumber: 1288,
+                    lineNumber: 1331,
                     columnNumber: 144
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(AIShowcase, {}, void 0, false, {
                     fileName: "[project]/src/app/components/hero.tsx",
-                    lineNumber: 1288,
+                    lineNumber: 1331,
                     columnNumber: 156
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(HowItWorks, {}, void 0, false, {
                     fileName: "[project]/src/app/components/hero.tsx",
-                    lineNumber: 1288,
+                    lineNumber: 1331,
                     columnNumber: 170
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Stats, {}, void 0, false, {
                     fileName: "[project]/src/app/components/hero.tsx",
-                    lineNumber: 1288,
+                    lineNumber: 1331,
                     columnNumber: 184
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Testimonials, {}, void 0, false, {
                     fileName: "[project]/src/app/components/hero.tsx",
-                    lineNumber: 1288,
+                    lineNumber: 1331,
                     columnNumber: 193
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(CTA, {}, void 0, false, {
                     fileName: "[project]/src/app/components/hero.tsx",
-                    lineNumber: 1288,
+                    lineNumber: 1331,
                     columnNumber: 209
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Footer, {}, void 0, false, {
                     fileName: "[project]/src/app/components/hero.tsx",
-                    lineNumber: 1288,
+                    lineNumber: 1331,
                     columnNumber: 216
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/app/components/hero.tsx",
-            lineNumber: 1288,
+            lineNumber: 1331,
             columnNumber: 10
         }, this);
         $[1] = t0;

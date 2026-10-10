@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/Nila%20Nawrozi/Desktop/New%20folder%20(10)/dayai/src/app/SessionProvider.tsx"],"sourcesContent":["\r\n\"use client\";\r\n\r\nimport { SessionProvider } from \"next-auth/react\";\r\n\r\nexport default function AppSessionProvider({\r\n  children,\r\n}: {\r\n  children: React.ReactNode;\r\n}) {\r\n  return <SessionProvider>{children}</SessionProvider>;\r\n}\r\n"],"names":["AppSessionProvider","children"],"mappings":";;;;;AAGA;AAFA;;;AAIe,SAASA,mBAAmB,EACzCC,QAAQ,EAGT;IACC,qBAAO,6LAAC,oKAAe;kBAAEA;;;;;;AAC3B;KANwBD"}},
+    {"offset": {"line": 32, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/Nila%20Nawrozi/Desktop/New%20folder%20(10)/dayai/src/app/providers.tsx"],"sourcesContent":["\"use client\";\r\n\r\nimport { SessionProvider } from \"next-auth/react\";\r\n\r\nexport default function Providers({\r\n  children,\r\n}: {\r\n  children: React.ReactNode;\r\n}) {\r\n  return <SessionProvider>{children}</SessionProvider>;\r\n}"],"names":["Providers","children"],"mappings":";;;;;AAEA;AAFA;;;AAIe,SAASA,UAAU,EAChCC,QAAQ,EAGT;IACC,qBAAO,6LAAC,oKAAe;kBAAEA;;;;;;AAC3B;KANwBD"}}]
+}
