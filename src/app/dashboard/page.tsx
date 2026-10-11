@@ -127,7 +127,7 @@ export default function DashboardPage() {
               </button>
             ))}
           </nav>
-
+           
           <div className="mt-auto">
             <button
               onClick={() => alert("Settings page is coming next!")}
@@ -149,9 +149,10 @@ export default function DashboardPage() {
             </div>
           </div>
         </aside>
-
+           
         <section className="min-w-0 flex-1 p-4 sm:p-6 lg:p-10">
           <header className="mb-8 flex items-center justify-between gap-3">
+            
             <div className="flex items-center gap-3">
               <button
                 className="rounded-xl border p-2 md:hidden"
@@ -168,7 +169,9 @@ export default function DashboardPage() {
               </div>
             </div>
 
-            <button
+            
+              <div className="flex items-center gap-3">
+                <button
               onClick={() => setDark(!dark)}
               className={`rounded-xl border p-3 ${
                 dark ? "border-slate-700" : "border-slate-200 bg-white"
@@ -177,11 +180,10 @@ export default function DashboardPage() {
             >
               {dark ? <Sun size={20} /> : <Moon size={20} />}
             </button>
+         <SignOutButton />
+         <UserProfile />
+           </div>
           </header>
-         <div className="flex items-center gap-3">
-  <UserProfile />
-  <SignOutButton />
-</div>
           <section className="mb-8 overflow-hidden rounded-3xl bg-gradient-to-r from-violet-700 via-violet-600 to-indigo-500 p-6 text-white sm:p-9">
             <div className="max-w-xl">
               <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-white/15 px-3 py-1.5 text-sm">
